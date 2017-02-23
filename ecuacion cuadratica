@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+
+void main()
+{
+	
+	float primerasolucion, segundasolucion,b,a,c,raizinterna;
+    cout<<"Ecuacion cuadratica de la forma ax^2 + bx + c = 0" <<endl;
+	cout<<"Ingrese un valor para a: "<<endl;
+	cin>> a ;
+	cout<<"Ingrese un valor para b: "<<endl;
+	cin>> b ;
+	cout<<"Ingrese un valor para c: "<<endl;
+	cin>> c ;
+	raizinterna = (pow(b,2) - 4*a*c);
+	if (raizinterna<0)
+		cout <<" la ecuacion no tiene soucion real" <<endl;
+	else
+	{
+		primerasolucion = ( -b + sqrt(raizinterna))/(2*a);
+		segundasolucion = ( -b + sqrt(raizinterna))/(2*a);
+		if (primerasolucion==segundasolucion)
+			cout<< "La solucion unica es; "<<primerasolucion;
+		else
+			cout<< "la primera solucion es: "<<primerasolucion;
+		    cout<< "la segunda solucion es: "<<segundasolucion;
+	}
+	getch();
+}
