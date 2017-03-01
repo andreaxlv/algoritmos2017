@@ -27,3 +27,13 @@ void main()
     getch();
 }
 
+bool EsPar(int numero)
+{
+    if (numero%2==0)
+        return true;
+    else return false;
+}
+
+
+
+
