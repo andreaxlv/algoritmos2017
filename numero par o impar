@@ -1,0 +1,29 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+bool EsPar(int numero);
+int Ivertir (int n);
+int EliminarImpares (int n);
+
+void main()
+{
+    int n,i,k;
+    bool Par;
+    cout<<"Cantidad de numeros a analizar: "<<endl;
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cout<<"Ingrese el numero: "<<endl;
+        cin>>k;
+        Par=EsPar(k);
+        if (Par)
+            cout<<"Es Par: "<<endl;
+        else
+            cout<<"Es impar: "<<endl;
+    }
+    getch();
+}
+
